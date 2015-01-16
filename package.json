@@ -1,0 +1,25 @@
+{
+  "name": "wilddogio-protocol",
+  "version": "1.0.0",
+  "description": "wilddog io protocol",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stackOverMind/wilddogio-protocol.git"
+  },
+  "keywords": [
+    "wilddogio"
+  ],
+  "author": "jackxy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stackOverMind/wilddogio-protocol/issues"
+  },
+  "homepage": "https://github.com/stackOverMind/wilddogio-protocol",
+  "dependencies": {
+    "engine.io": "^1.4.3"
+  }
+}
