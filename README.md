@@ -12,10 +12,10 @@
 ## API
 
 
-### ref=WDProtocal(baseUrl)
+### wio=WIOProtocal(baseUrl)
 初始化客户端
 
-### ref.add(data,callback)
+### wio.sendAdd(data,callback)
 添加数据
 ###### arguments
 * data
@@ -26,7 +26,7 @@ function(err):如果err null 操作成功
 ###### return
 * null
 
-### ref.push(data,callback)
+### wio.sendPush(data,callback)
 推送数据
 
 ###### arguments
@@ -37,7 +37,7 @@ function(err):如果err null 操作成功
 ###### return
 * null
 
-### ref.delete(data,callback)
+### wio.sendDelete(data,callback)
 删除数据
 
 ###### arguments
@@ -48,7 +48,7 @@ function(err):如果err null 操作成功
 ###### return
 * null
 
-### ref.update(data,callback)
+### wio.sendUpdate(data,callback)
 修改数据
 
 ###### arguments
@@ -59,7 +59,7 @@ function(err):如果err null 操作成功
 ###### return
 * null
 
-### ref.subscribe(data,callback)
+### wio.sendSubscribe(data,callback)
 订阅数据
 
 ###### arguments
@@ -71,7 +71,7 @@ function(err,data):如果err null 操作成功,如果操作成功data是一个ob
 ###### return
 * null
 
-### ref.query(data,callback)
+### wio.sendQuery(data,callback)
 查询数据
 
 ###### arguments
@@ -79,36 +79,65 @@ function(err,data):如果err null 操作成功,如果操作成功data是一个ob
 {path:&lt;path&gt;,query:&lt;query&gt;,[opt:{&lt;optional data&gt;}]}
 * callback
 
-function(err,data):如果err null 操作成功,如果操作成功data是一个object {path:&lt;path&gt;,data:{&lt;data&gt;}[opt:{&lt;optional data&gt;}]}
+function(err,data):如果err = null 操作成功,如果操作成功data是一个object {path:&lt;path&gt;,data:{&lt;data&gt;}[opt:{&lt;optional data&gt;}]}
 
 ###### return
 * null
 
-### ref.onAdd(callback)
+### wio.onReceiveAdd(callback)
 监听添加数据事件
 
 ###### arguments
 * callback
-function(err,data):如果err null 操作成功,如果操作成功data是一个object {path:&lt;path&gt;,data:{&lt;data&gt;},[opt:{&lt;optional data&gt;}]}
+function(err,data):如果err = null 操作成功,如果操作成功data是一个object {path:&lt;path&gt;,data:{&lt;data&gt;},[opt:{&lt;optional data&gt;}]}
 
 ###### return
 * null
 
-### ref.onPush(callback)
+### wio.onReceivePush(callback)
 
 ###### arguments
 * callback
-function(err,data):如果err null 操作成功,如果操作成功data是一个object {path:&lt;path&gt;,data:{&lt;data&gt;},[opt:{&lt;optional data&gt;}]}
+function(err,data):如果err = null 操作成功,如果操作成功data是一个object {path:&lt;path&gt;,data:{&lt;data&gt;},[opt:{&lt;optional data&gt;}]}
 
 #### return
-*null
+* null
 
-### ref.onDelete(callback)
+### wio.onReceiveDelete(callback)
 
 ###### arguments
+* callback
+function(err,data):如果err = null 操作成功,如果操作成功data是一个object {path:&lt;path&gt;,[opt:{&lt;optional data&gt;}]}
 
 ###### return
-*null
+* null
+
+### wio.onReiceiveUpdate(callback)
+
+######arguments
+* callback
+function(err,data):如果err = null 操作成功,如果操作成功data是一个object {path:&lt;path&gt;,data:{&lt;data&gt;},[opt:{&lt;optional data&gt;}]}
+
+###### return 
+* null
+
+###wio.onReceiveSubscribe(callback)
+
+###### arguments
+* callback
+function(err,data):如果err = null 操作成功,如果操作成功data是一个object {path:&lt;path&gt;,[opt:{&lt;optional data&gt;}]}
+
+###### return
+null
+
+###wio.onReiceiveQuery(callback)
+
+###### arguments
+* callback
+function(err,data):如果err = null 操作成功,如果操作成功data是一个object {path:&lt;path&gt;,query:&lt;query&gt;,[opt:{&lt;optional data&gt;}]}
+###### return 
+null
+
 
 
 
