@@ -20,6 +20,7 @@
 ###### arguments
 * data:{t:"a",p:&lt; path &gt;,d:{&lt;data&gt;},[opt:{&lt;optional data&gt;}]}
 * callback
+
 ###### return
 * null
 ### ref.push(data,callback)
