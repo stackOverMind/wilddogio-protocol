@@ -9,64 +9,64 @@
 * 订阅数据
 * 查询数据
 
-##API
+## API
 
 
-###ref=WDProtocal(baseUrl)
+### ref=WDProtocal(baseUrl)
 初始化客户端
 
-###ref.add(data,callback)
+### ref.add(data,callback)
 添加数据
-####arguments
+###### arguments
 * data:{t:"a",p:<path>,d:{<data>},[opt:{<optional data>}]}
 * callback
-####return
+###### return
 * null
-###ref.push(data,callback)
+### ref.push(data,callback)
 推送数据
-####arguments
+###### arguments
 * data:{t:"p",p:<path>,d:{<data>},[opt:{<optional data>}]}
 * callback
-####return
+#### return
 * null
-###ref.delete(data,callback)
+### ref.delete(data,callback)
 删除数据
-####arguments
+###### arguments
 * data:{t:"d",p:<path>,[opt:{<optional data>}]}
 * callback
-####return
+###### return
 * null
-###ref.update(data,callback)
+### ref.update(data,callback)
 修改数据
-####arguments
+###### arguments
 * data:{t:"u",p:<path>,d:{<data>},[opt:{<optional data>}]}
 * callback
-####return
+#### return
 * null
-###ref.subscribe(data,callback)
+### ref.subscribe(data,callback)
 订阅数据
-####arguments
+#### arguments
 * data:{t:"s",p:<path>,[opt:{<optional data>}]}
 * callback
-####return
+#### return
 * null
-###ref.query(data,callback)
+### ref.query(data,callback)
 查询数据
-####arguments
+#### arguments
 * data{t:"q",p:<path>,q:<query>,[opt:{<optional data>}]}
 * callback
-####return
+#### return
 * null
-###ref.onAdd(callback)
+### ref.onAdd(callback)
 监听添加数据事件
-####arguments
+#### arguments
 * callback:function(path,data,[optional])
-####return
+#### return
 * null
-###ref.onPush(callback)
-####arguments
+### ref.onPush(callback)
+#### arguments
 
-####return
+#### return
 
 
 
