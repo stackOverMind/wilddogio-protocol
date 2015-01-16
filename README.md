@@ -28,7 +28,7 @@
 推送数据
 
 ###### arguments
-* data:{t:"p",p:<path>,d:{<data>},[opt:{<optional data>}]}
+* data:{t:"p",p:&lt;path&gt;,d:{&lt;data&gt;},[opt:{&lt;optional data&gt;}]}
 * callback
 
 #### return
@@ -38,7 +38,7 @@
 删除数据
 
 ###### arguments
-* data:{t:"d",p:<path>,[opt:{<optional data>}]}
+* data:{t:"d",p:&lt;path&gt;,[opt:{&lt;optional data&gt;}]}
 * callback
 
 ###### return
@@ -48,7 +48,7 @@
 修改数据
 
 ###### arguments
-* data:{t:"u",p:<path>,d:{<data>},[opt:{<optional data>}]}
+* data:{t:"u",p:&lt;path&gt;,d:{&lt;data&gt;},[opt:{&lt;optional data&gt;}]}
 * callback
 
 #### return
@@ -58,7 +58,7 @@
 订阅数据
 
 #### arguments
-* data:{t:"s",p:<path>,[opt:{<optional data>}]}
+* data:{t:"s",p:&lt;path&gt;,[opt:{&lt;optional data&gt;}]}
 * callback
 
 #### return
@@ -68,7 +68,7 @@
 查询数据
 
 #### arguments
-* data{t:"q",p:<path>,q:<query>,[opt:{<optional data>}]}
+* data{t:"q",p:&lt;path&gt;,q:&lt;query&gt;,[opt:{&lt;optional data&gt;}]}
 * callback
 
 #### return
