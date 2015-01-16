@@ -18,8 +18,10 @@
 ### ref.add(data,callback)
 添加数据
 ###### arguments
-* data:{t:"a",p:&lt; path &gt;,d:{&lt;data&gt;},[opt:{&lt;optional data&gt;}]}
+* data
+{path:&lt; path &gt;,data:{&lt;data&gt;},[opt:{&lt;optional data&gt;}]}
 * callback
+function(err):如果err null 操作成功
 
 ###### return
 * null
@@ -28,18 +30,20 @@
 推送数据
 
 ###### arguments
-* data:{t:"p",p:&lt;path&gt;,d:{&lt;data&gt;},[opt:{&lt;optional data&gt;}]}
+* data:{path:&lt;path&gt;,data:{&lt;data&gt;},[opt:{&lt;optional data&gt;}]}
 * callback
+function(err):如果err null 操作成功
 
-#### return
+###### return
 * null
 
 ### ref.delete(data,callback)
 删除数据
 
 ###### arguments
-* data:{t:"d",p:&lt;path&gt;,[opt:{&lt;optional data&gt;}]}
+* data:{path:&lt;path&gt;,[opt:{&lt;optional data&gt;}]}
 * callback
+function(err):如果err null 操作成功
 
 ###### return
 * null
@@ -48,46 +52,63 @@
 修改数据
 
 ###### arguments
-* data:{t:"u",p:&lt;path&gt;,d:{&lt;data&gt;},[opt:{&lt;optional data&gt;}]}
+* data:{path:&lt;path&gt;,data:{&lt;data&gt;},[opt:{&lt;optional data&gt;}]}
 * callback
+function(err):如果err null 操作成功
 
-#### return
+###### return
 * null
 
 ### ref.subscribe(data,callback)
 订阅数据
 
-#### arguments
-* data:{t:"s",p:&lt;path&gt;,[opt:{&lt;optional data&gt;}]}
+###### arguments
+* data
+{path:&lt;path&gt;,[opt:{&lt;optional data&gt;}]}
 * callback
+function(err,data):如果err null 操作成功,如果操作成功data是一个object {path:&lt;path&gt;:data:{&lt;data&gt;}}
 
-#### return
+###### return
 * null
 
 ### ref.query(data,callback)
 查询数据
 
-#### arguments
-* data{t:"q",p:&lt;path&gt;,q:&lt;query&gt;,[opt:{&lt;optional data&gt;}]}
+###### arguments
+* data
+{path:&lt;path&gt;,query:&lt;query&gt;,[opt:{&lt;optional data&gt;}]}
 * callback
 
-#### return
+function(err,data):如果err null 操作成功,如果操作成功data是一个object {path:&lt;path&gt;,data:{&lt;data&gt;}[opt:{&lt;optional data&gt;}]}
+
+###### return
 * null
 
 ### ref.onAdd(callback)
 监听添加数据事件
 
-#### arguments
-* callback:function(path,data,[optional])
+###### arguments
+* callback
+function(err,data):如果err null 操作成功,如果操作成功data是一个object {path:&lt;path&gt;,data:{&lt;data&gt;},[opt:{&lt;optional data&gt;}]}
 
-#### return
+###### return
 * null
 
 ### ref.onPush(callback)
-#### arguments
+
+###### arguments
+* callback
+function(err,data):如果err null 操作成功,如果操作成功data是一个object {path:&lt;path&gt;,data:{&lt;data&gt;},[opt:{&lt;optional data&gt;}]}
 
 #### return
+*null
 
+### ref.onDelete(callback)
+
+###### arguments
+
+###### return
+*null
 
 
 
