@@ -18,7 +18,7 @@
 ### ref.add(data,callback)
 添加数据
 ###### arguments
-* data:{t:"a",p:<path>,d:{<data>},[opt:{<optional data>}]}
+* data:{t:"a",p:&lt; path &gt;,d:{&lt;data&gt;},[opt:{&lt;optional data&gt;}]}
 * callback
 ###### return
 * null
