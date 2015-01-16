@@ -23,47 +23,66 @@
 
 ###### return
 * null
+
 ### ref.push(data,callback)
 推送数据
+
 ###### arguments
 * data:{t:"p",p:<path>,d:{<data>},[opt:{<optional data>}]}
 * callback
+
 #### return
 * null
+
 ### ref.delete(data,callback)
 删除数据
+
 ###### arguments
 * data:{t:"d",p:<path>,[opt:{<optional data>}]}
 * callback
+
 ###### return
 * null
+
 ### ref.update(data,callback)
 修改数据
+
 ###### arguments
 * data:{t:"u",p:<path>,d:{<data>},[opt:{<optional data>}]}
 * callback
+
 #### return
 * null
+
 ### ref.subscribe(data,callback)
 订阅数据
+
 #### arguments
 * data:{t:"s",p:<path>,[opt:{<optional data>}]}
 * callback
+
 #### return
 * null
+
 ### ref.query(data,callback)
 查询数据
+
 #### arguments
 * data{t:"q",p:<path>,q:<query>,[opt:{<optional data>}]}
 * callback
+
 #### return
 * null
+
 ### ref.onAdd(callback)
 监听添加数据事件
+
 #### arguments
 * callback:function(path,data,[optional])
+
 #### return
 * null
+
 ### ref.onPush(callback)
 #### arguments
 
