@@ -15,17 +15,6 @@
 ### wio=WIOProtocal(baseUrl)
 初始化客户端
 
-### wio.sendAdd(data,callback)
-添加数据
-###### arguments
-* data
-{path:&lt; path &gt;,data:{&lt;data&gt;},[opt:{&lt;optional data&gt;}]}
-* callback
-function(err):如果err null 操作成功
-
-###### return
-* null
-
 ### wio.sendPush(data,callback)
 推送数据
 
